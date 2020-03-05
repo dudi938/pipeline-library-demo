@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def call() {
-  docker images -a
+def call(String name = 'human') {
+  echo "Hi, ${name}."
 }
