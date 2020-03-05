@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
 def call(String name = 'human') {
-  docker "images -a"
+  this.sh("docker images -a");
 }
